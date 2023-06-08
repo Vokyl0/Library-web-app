@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book search</title>
+</head>
+<body>
+    <h1>Search for book</h1>
+    <h2>(leave empty field if you don't want to search by that parameter)</h2>
+    <form action="/my-app/search-page" method="get">
+        <label>Title</label>
+        <br/>
+        <input type="text" name="title">
+        <br/>
+        <label>Author</label>
+        <br/>
+        <input type="text" name="author">
+        <br/>
+        <label>Minimum price</label>
+        <br/>
+        <input type="text" name="min-price">
+        <br/>
+        <label>Maximum price</label>
+        <br/>
+        <input type="text" name="max-price">
+        <br/>
+        <label>Release year</label>
+        <br/>
+        <input type="text" name="release-year">
+        <br/>
+        <label>Genre</label>
+        <br/>
+        <select name="genre">
+            <option value="Any">Any</option>
+            <option value="Thriller">Thriller</option>
+            <option value="Horror">Horror</option>
+            <option value="Historical">Historical</option>
+            <option value="Romance">Romance</option>
+            <option value="Western">Western</option>
+        </select>
+        <br/>
+        <button type="submit">Search</button>
+    </form>
+</body>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<a href="http://localhost:8080/my-app/static/add.html">Go do the adding page</a>
+</html>

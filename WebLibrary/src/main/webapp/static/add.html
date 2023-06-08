@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Adding a book</title>
+    </head>
+    <body>
+        <h1>Adding a book</h1>
+        <form action="/my-app/main-page" method="post" enctype="multipart/form-data">
+            <label>Title</label>
+            <br/>
+            <input type="text" name="title">
+            <br/>
+            <label>Author</label>
+            <br/>
+            <input type="text" name="author">
+            <br/>
+            <label>Price</label>
+            <br/>
+            <input type="text" name="price">
+            <br/>
+            <label>Release year</label>
+            <br/>
+            <input type="text" name="release-year">
+            <br/>
+            <label>Book file</label>
+            <br/>
+            <input type="file" name="content">
+            <br/>
+            <label>Genre</label>
+            <br/>
+            <select name="genre">
+                <option value="Thriller">Thriller</option>
+                <option value="Horror">Horror</option>
+                <option value="Historical">Historical</option>
+                <option value="Romance">Romance</option>
+                <option value="Western">Western</option>
+            </select>
+            <br/>
+            <button type="submit">Add</button>
+        </form>
+        <br/>
+        <br/>
+        <br/>
+        <a href="http://localhost:8080/my-app/static/search.html">Go read some books</a>
+    </body>
+</html>
